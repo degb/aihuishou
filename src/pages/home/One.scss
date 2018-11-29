@@ -1,7 +1,42 @@
 #one{
-    background: palegoldenrod;
-    .item{
-        line-height: 50px;
-        border-bottom: 1px solid #ddd;
+    height: 100%;
+   .home-header{
+    box-shadow: 0 0.08rem 0.2rem hsla(195,9%,83%,.3);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 750px;
+    min-width: 320px;
+    z-index: 10;
+    overflow: hidden;
+    height: .44rem;
+    line-height: .44rem;
+    background: #fff;
+    .location{
+        color: #111;
+        font-size: .14rem;
+        display: inline-block;
+        padding: 0 .15rem;
+        background: url(../../assets/location.png) no-repeat 100%;
+        background-size: .1rem;
+        text-decoration: none;
     }
+    .cart{
+        float: right;
+        margin-right: .14rem;
+        position: relative;
+        height: .44rem;
+        width: .4rem;
+        background: url(../../assets/cart.png) no-repeat 50%;
+        background-size: .2rem;
+    }
+    .search{
+        float: right;
+        height: .44rem;
+        width: .4rem;
+        background: url(../../assets/search.png) no-repeat 50%;
+        background-size: .16rem;
+        margin-right: -.1rem;
+    }
+   }
 }
