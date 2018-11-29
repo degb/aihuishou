@@ -1,10 +1,9 @@
 import React, {Component} from 'react'
 import { BrowserRouter, Route, NavLink as Link, Redirect, Switch  } from 'react-router-dom'
 
-import One from './pages/one/One'
-import Two from './pages/two/Two'
-import Three from './pages/three/Three'
-import Four from './pages/four/Four'
+import Home from './pages/home/One'
+import New from './pages/new/Two'
+import Mine from './pages/mine/Three'
 
 import './App.css'
 
@@ -20,13 +19,12 @@ export default class App extends Component{
                             return <Redirect to="/one"/>
                         }}/>
 
-                        <Route path="/one" component={One}/>
-                        <Route path="/two" component={Two}/>
-                        <Route path="/three" component={Three}/>
-                        <Route path="/four" component={Four}/>
+                        <Route path="/home" component={Home}/>
+                        <Route path="/new" component={New}/>
+                        <Route path="/mine" component={Mine}/>
                         <Route render={()=>{
                             //对'/'重定向
-                            return <Redirect to="/one"/>
+                            return <Redirect to="/home"/>
                         }}/>
                     </Switch>
 
@@ -34,12 +32,17 @@ export default class App extends Component{
 
 
                     <nav className="tabs">
-                        <Link className="tab" to="/one">one</Link>
-                        <Link className="tab" to="/two">two</Link>
-                        <Link className="tab" to="/three">three</Link>
-                        <Link className="tab" to="/four">four</Link>
+                        <Link className="tab" to="/home">
+                           <img src={require('./assets/home.png')} alt="首页"/>
+                        </Link>
+                        <Link className="tab" to="/new">
+                           <img src={require('./assets/new.png')} alt="换新机"/>
+                        </Link>
+                        <Link className="tab" to="/mine">
+                           <img src={require('./assets/mine.png')} alt="我的"/>
+                        </Link>
                     </nav>
-                    
+                   
 
                 </div>
             </BrowserRouter>
