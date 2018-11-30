@@ -6,7 +6,7 @@
     display:none
 }
 html{
-	margin: 200px;
+	margin: 0;
 }
 #app, body, html {
     height:100%
