@@ -1,19 +1,33 @@
 import React, {Component} from 'react'
 import { BrowserRouter, Route, NavLink as Link, Redirect, Switch  } from 'react-router-dom'
 
-import Home from './pages/home/One'
-import New from './pages/new/Two'
-import Mine from './pages/mine/Three'
+import Home from './pages/home/Home'
+import New from './pages/new/New'
+import Mine from './pages/mine/Mine'
+import './App.scss'
 export default class App extends Component{
     render(){
         return (
             <BrowserRouter>
                 <div className="app">
+                    <header>
+                        {/* 定位 */}
+                        <div className="location">
+                            <span>深圳市</span>
+                        </div>
+
+                        {/* 搜索、购物车 */}
+                        <div className="top-icon">
+                            <span className="search">搜索</span>
+                            <span className="shopCar">购物车</span>
+                        </div>
+
+                    </header>
 
                     <Switch>
                         <Route path="/" exact render={()=>{
                             //对'/'重定向
-                            return <Redirect to="/one"/>
+                            return <Redirect to="/home"/>
                         }}/>
 
                         <Route path="/home" component={Home}/>
@@ -30,13 +44,13 @@ export default class App extends Component{
 
                     <nav className="tabs">
                         <Link className="tab" to="/home">
-                           <img src={require('./assets/home.png')} alt="首页"/>
+                            首页
                         </Link>
                         <Link className="tab" to="/new">
-                           <img src={require('./assets/new.png')} alt="换新机"/>
+                            换新机
                         </Link>
                         <Link className="tab" to="/mine">
-                           <img src={require('./assets/mine.png')} alt="我的"/>
+                            我的
                         </Link>
                     </nav>
                    

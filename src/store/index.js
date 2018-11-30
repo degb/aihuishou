@@ -11,6 +11,7 @@ function reducer(state, action){
     if(action.type === 'change-name'){
         // 对全局状态进行修改，需要返回一个新的state值
         return {...state, username: action.val};
+        
     }
 
     //其他情况，返回原来的state值 
