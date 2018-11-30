@@ -60,6 +60,7 @@ a, button, div, label, span {
     
 }
 .page{
+    font-size: 100px;
     width: 100%;
     position: absolute;
     top: 0;
