@@ -8,9 +8,15 @@
     max-width: 750px;
     min-width: 320px;
     z-index: 10;
+
     // overflow: hidden;
     height: .44rem;
-    line-height: .44rem;
+    // line-height: .44rem;
+
+    overflow: hidden;
+    // height: 0.44rem;
+    // line-height: 0.44rem;
+
     background: #fff;
     .location{
         color: #111;
