@@ -19,6 +19,10 @@ export default function(props){
                 </div>
 
             </header>
+                {/*回收流程*/}
+            <div className="step">
+              <img src={require('../../assets/step.png')} />
+            </div>
         </div>
     )
 }
