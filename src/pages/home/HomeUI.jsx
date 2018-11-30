@@ -9,12 +9,13 @@ export default function(props){
                 {/* 定位 */}
                 <div className="location">
                     <span>深圳市</span>
+                    <b className="iconfont icon-xia"></b>
                 </div>
 
                 {/* 搜索、购物车 */}
                 <div className="top-icon">
-                    <span className="search">搜索</span>
-                    <span className="shopCar">购物车</span>
+                    <span className="search iconfont icon-sousuo"></span>
+                    <span className="shopCar iconfont icon-gouwuchekong"></span>
                 </div>
 
             </header>

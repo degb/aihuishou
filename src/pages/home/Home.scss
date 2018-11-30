@@ -20,9 +20,19 @@ header{
         left: 0;
     }
     .top-icon{
-        display: inline-block;
+        display: flex;
         padding: 10px;
         position: absolute;
         right: 0;
+        .search{
+            display: flex;
+            font-size: 0.2rem;
+            width: 0.29rem;
+            height: 0.4rem;
+            
+        }
+        .shopCar{
+            margin-right: 0.14rem;
+        }
     }
 }

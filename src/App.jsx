@@ -30,13 +30,16 @@ export default class App extends Component{
 
                     <nav className="tabs">
                         <Link className="tab" to="/home">
-                            首页
+                             <i className="iconfont icon-shouye"></i> 
+                             <b>首页</b> 
                         </Link>
                         <Link className="tab" to="/new">
-                            换新机
+                             <i className="iconfont icon-shouji"></i> 
+                             <b>换新机</b> 
                         </Link>
                         <Link className="tab" to="/mine">
-                            我的
+                             <i className="iconfont icon-wode"></i>
+                             <b>我的</b> 
                         </Link>
                     </nav>
                    
