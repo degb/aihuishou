@@ -1,11 +1,11 @@
 import React, {Component} from 'react'
+import MineUI from './MineUI.jsx'
+import './Mine.scss'
 
-export default class Three extends Component{
+
+export default class Mine extends Component{
     render(){
-        return (
-            <div id="mine" className="page">
-                <h1>这是three组件</h1>
-            </div>
-        )
+        return <MineUI/>
     }
 }
+

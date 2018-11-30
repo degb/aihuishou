@@ -10,20 +10,6 @@ export default class App extends Component{
         return (
             <BrowserRouter>
                 <div className="app">
-                    <header>
-                        {/* 定位 */}
-                        <div className="location">
-                            <span>深圳市</span>
-                        </div>
-
-                        {/* 搜索、购物车 */}
-                        <div className="top-icon">
-                            <span className="search">搜索</span>
-                            <span className="shopCar">购物车</span>
-                        </div>
-
-                    </header>
-
                     <Switch>
                         <Route path="/" exact render={()=>{
                             //对'/'重定向

@@ -1,12 +1,12 @@
-import React, {Component} from 'react'
 
-export default class Two extends Component{
- 
+import React, {Component} from 'react'
+import NewUI from './NewUI.jsx'
+import './New.scss'
+
+
+export default class New extends Component{
     render(){
-        return (
-            <div id="new" className="page">
-                <h1>这是two组件</h1>
-            </div>
-        )
+        return <NewUI/>
     }
 }
+
