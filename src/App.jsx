@@ -4,9 +4,6 @@ import { BrowserRouter, Route, NavLink as Link, Redirect, Switch  } from 'react-
 import Home from './pages/home/One'
 import New from './pages/new/Two'
 import Mine from './pages/mine/Three'
-
-import './App.css'
-
 export default class App extends Component{
     render(){
         return (
