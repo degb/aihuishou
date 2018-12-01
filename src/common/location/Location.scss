@@ -1,0 +1,80 @@
+#location{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: -0.49rem;
+    z-index: 5;
+    background: #fff;
+    // 头部
+    header{
+        width: 100%;
+        height: 0.44rem;
+        display: flex;
+        .locationBack{
+            position: absolute;
+            padding: 0.1rem 0.2rem;
+            font-size: 0.2rem;
+            color: #000;
+        }
+        
+        .title{
+            flex: 1;
+            text-align: center;
+            line-height: 0.4rem;
+            font-size: .18rem;
+            font-weight: 550;
+        }
+    }
+    // 搜索栏
+    .hideShow{
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3)
+    }
+    .searchBox{
+        position: relative;
+        padding: 0.08rem 0.15rem;
+        height: 0.46rem;
+        font-size: 0.14rem;
+        background: #ccc;
+        .searchICON{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0.24rem;
+            color: #ccc;
+            font-size: 0.16rem;
+            line-height: 0.16rem;
+        }
+        .searchInp{
+            width: 90%;
+            height: 100%;
+            padding-left: 0.35rem;
+            font-size: 0.14rem;
+            border: 0;
+            border-radius: 0.05rem;
+        }
+        .cancelICON{
+            width: 0.16rem;
+            height: 0.16rem;
+            text-align: center;
+            line-height: 0.15rem;
+            border-radius: 50%;
+            background: #ccc;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            right: 0.6rem;
+            transform: translateY(-50%);
+            position: absolute;
+        }
+        .cancelBtn{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 0 0.1rem;
+            text-align: center;
+        }
+    }
+}
