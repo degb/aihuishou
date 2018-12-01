@@ -1,22 +1,19 @@
 import React, {Component} from 'react'
 import { BrowserRouter, Route, NavLink as Link, Redirect, Switch  } from 'react-router-dom'
 
-import Home from './pages/home/One'
-import New from './pages/new/Two'
-import Mine from './pages/mine/Three'
-
-import './App.css'
-
+import Home from './pages/home/Home'
+import New from './pages/new/New'
+import Mine from './pages/mine/Mine'
+import './App.scss'
 export default class App extends Component{
     render(){
         return (
             <BrowserRouter>
                 <div className="app">
-
                     <Switch>
                         <Route path="/" exact render={()=>{
                             //对'/'重定向
-                            return <Redirect to="/one"/>
+                            return <Redirect to="/home"/>
                         }}/>
 
                         <Route path="/home" component={Home}/>
@@ -33,13 +30,16 @@ export default class App extends Component{
 
                     <nav className="tabs">
                         <Link className="tab" to="/home">
-                           <img src={require('./assets/home.png')} alt="首页"/>
+                             <i className="iconfont icon-shouye"></i> 
+                             <b>首页</b> 
                         </Link>
                         <Link className="tab" to="/new">
-                           <img src={require('./assets/new.png')} alt="换新机"/>
+                             <i className="iconfont icon-shouji"></i> 
+                             <b>换新机</b> 
                         </Link>
                         <Link className="tab" to="/mine">
-                           <img src={require('./assets/mine.png')} alt="我的"/>
+                             <i className="iconfont icon-wode"></i>
+                             <b>我的</b> 
                         </Link>
                     </nav>
                    

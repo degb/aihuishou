@@ -4,10 +4,8 @@ import React from 'react'
 export default function(props){
     console.log(props);
     return (
-        <div id="one" className="page">
-            <h1>这是one组件</h1>
+        <div id="mine" className="page">
+            <h1>我的</h1>
         </div>
     )
 }
-
-
