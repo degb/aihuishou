@@ -1,10 +1,10 @@
-#Home{
+#home{
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
     bottom: 49px;
-}
+
 // 头部
 header{
     width: 100%;
@@ -29,13 +29,13 @@ header{
             font-size: 0.2rem;
             width: 0.29rem;
             height: 0.4rem;
-            
         }
         .shopCar{
             margin-right: 0.14rem;
         }
     }
 }
+
 
    //轮播图
    .swiper-container{
@@ -53,4 +53,18 @@ header{
           
        }
    }
+
+
+// step
+    .step{
+        width: 100%;
+        height: 0.5rem;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+
+}
 
